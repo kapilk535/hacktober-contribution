@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 long long factorial (int N);
+
 int main()
 {
     int T,N;
@@ -8,7 +10,7 @@ int main()
     while(T--)
     {
         cin>>N; //input n
-        cout<<factorial(N)<<endl;
+        cout<<factorial(N)<<"\n";
     }
     return 0;
 }
@@ -16,9 +18,6 @@ int main()
 long long factorial (int N)
 {
     long long fact = 1;
-    for(int i = 1; i <= N; i++)
-    {
-        fact = fact * i;
-    }
+    for(int i = 1; i <= N; i++)     fact = fact * i;
     return fact;
 }
